@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Editable Impact Chart Demo</title>
+        <style type="text/css" media="screen">
+            #chart {
+                clear: left;
+            }
+            #legend-colour {
+                -moz-border-radius: 2px;
+                -webkit-border-radius: 2px;
+                border-radius: 2px;
+                float:left;
+                width: 1em;
+                height: 1em;
+                border: solid 1px #000;
+                margin-right: .3em;
+                line-height: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="legend-wrap">
+            <div id="legend-colour">&nbsp;</div>
+            <div id="legend-text"></div>
+        </div>
+        <div id="chart"></div>
+    </body>
+    <script src="./raphael.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./data.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../impact.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        impact(data);
+    </script>
+</html>
